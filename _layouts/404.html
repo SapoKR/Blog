@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 
 <style type="text/css" media="screen">
   .container {
@@ -8,17 +11,48 @@ layout: default
     max-width: 600px;
     text-align: center;
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .container > p {
+    padding-left: 100px;
+    font-size: 25px;
+  }
+  
+  .error_image {
+    position: relative;
+    width: 467px;
+    width: 787px;
+    vertical-align: middle;
+  }
+
+  .error_text {
+    position: absolute;
+    margin: 0;
+    font-size: 108px;
+    top: 17.5%;
+    left: 45.5%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    transform-origin: center;
+    padding: 0.6rem;
+    color: black;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }
 </style>
 
 <div class="container">
-  <h1>404</h1>
+  <div class="error">
+    <img class="error_image" src="/assets/images/error.png" />
+    <h1 class="error_text">404</h1>
+  </div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>Try to check other pages through the menu. </p>
+  <p><strong>페이지를 찾을수 없어요 :(</strong></p>
+  <p>메뉴를 통해 다른 페이지를 확인해 보세요.</p>
 </div>
